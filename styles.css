@@ -55,11 +55,16 @@ table {
 
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+
+.body {
+    background-image:url("images/bg-image.jpg")
+}
 .main-container {
     height:100vh;
     width:100vw;
-    background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 33%, rgba(9,9,121,1) 56%, rgba(176,242,255,1) 88%, rgba(255,255,255,1) 98%);
+    background-image: url("images/bg-image.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
     padding:0px;
     margin:0px;
     display:flex;
@@ -96,6 +101,10 @@ border-radius:28px;
     margin-bottom:38px;
     justify-self:center;
 }
+.hook{
+    font-size:1rem;
+    margin-bottom:10px;
+}
 label{
     padding:5px;
 }
@@ -107,9 +116,35 @@ input{
     border-radius:8px;
 }
 
+button {
+	border: none;
+    background-color: rgb(105, 123, 255);
+    color: #ffffff;
+    font-size:18px;
+    margin:5px;
+    margin-top:30px;
+    border:2px solid rgb(255, 255, 255);
+    padding:10px;
+    padding-right:30px;
+    padding-left:30px;
+    border-radius:7px;
+    font-weight:extra-bold;
+    cursor:pointer;
+    
+}
+
+button:hover{
+    background-color:rgb(115,135,255);
+}
+
 .form-footer {
     margin-top:10px;
     margin-bottom:0px;
     padding-bottom:3px;
     border-bottom:2px rgba(128, 128, 128, 0.5);
+}
+
+.material-symbols-outlined {
+    color: grey;
+    font-size:24px;
 }

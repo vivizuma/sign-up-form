@@ -19,9 +19,9 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="left-side">hello</div>
-      <div class="right-side">
+
         <div class="sign-up-container">
+          <div class="hook">Would you like to know more?</div>
           <div class="title">Sign Up!</div>
           <div class="input-form">
             <form action="#" method="post">
@@ -41,6 +41,7 @@
                   name="last-name"
                   id="last-name"
                   placeholder="Lightyear"
+                  minlength="3"
                   required
                 />
               </div>
@@ -48,7 +49,7 @@
                 <span class="material-symbols-outlined"> mail </span>
                 <label for="email">Email Address</label>
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   id="email"
                   placeholder="bigbuzz@reachforthesky.com"
@@ -58,7 +59,7 @@
                 <span class="material-symbols-outlined"> phone_iphone </span>
                 <label for="phone-number">Phone Number</label>
                 <input
-                  type="text"
+                  type="number"
                   name="phone-number"
                   id="phone-number"
                   placeholder="03821456345"
@@ -67,13 +68,16 @@
               <div class="input">
                 <span class="material-symbols-outlined"> key </span>
                 <label for="password">Password</label>
-                <input type="text" name="password" id="password" />
+                <input type="password" name="password" id="password" minlength="8" maxlength="48" />
               </div>
             </form>
           </div>
+          <div class="submit-btn">
+            <button>Join</button>
+          </div>
           <div class="form-footer">already a member? log in</div>
         </div>
-      </div>
+      
     </div>
   </body>
 </html>
